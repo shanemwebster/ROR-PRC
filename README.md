@@ -37,6 +37,7 @@ To build the Docker image, run:
 docker build -t my-ruby-app .
 
 To run the Docker image, run:
+```bash
 docker run -it --name my-running-app my-ruby-app
 
 Replace my-ruby-app with whatever you want to name your Docker image and container.
