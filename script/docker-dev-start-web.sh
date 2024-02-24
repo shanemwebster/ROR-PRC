@@ -1,4 +1,4 @@
-  #!/usr/bin/env bash
+  #!/bin/bash
   set -xeuo pipefail
   ./script/wait-for-tcp.sh db 5432
   if [[ -f ./tmp/pids/server.pid ]]; then
@@ -16,6 +16,5 @@
     bin/rails db:seed
     touch .db-seeded
   fi
-  # foreman start -f Procfile.dev
-  bin/dev
+  foreman start -f /app/script/Procfile.dev
 

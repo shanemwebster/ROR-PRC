@@ -1,6 +1,6 @@
 # Dockerfile
 
-  FROM ruby:3.3.0
+  FROM --platform=linux/amd64 ruby:3.3.0
   # Install apt based dependencies required to run Rails as
   # well as RubyGems. As the Ruby image itself is based on a
   # Debian image, we use apt-get to install those.

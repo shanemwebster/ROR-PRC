@@ -1,4 +1,4 @@
-  #!/usr/bin/env bash
+  #!/bin/bash
   if [ -z "$2" ]; then
     cat <<HELP
     Usage: script/wait-for-tcp ADDRESS PORT

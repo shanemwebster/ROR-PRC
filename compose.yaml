@@ -41,7 +41,7 @@
         DB_PASSWORD: postgres
         BUNDLE_GEMFILE: /app/Gemfile
         SELENIUM_REMOTE_URL: http://chrome_server:4444/wd/hub
-      command: /app/script/docker-dev-start-web.sh
+      command: /bin/bash script/docker-dev-start-web.sh
       networks:
         - backend
         - frontend
