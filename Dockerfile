@@ -9,6 +9,7 @@
     nano \
     nodejs \
     npm \
+    watchman \
     && npm install -g yarn esbuild
 
   # Configure the main working directory. This is the base
